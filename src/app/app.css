@@ -1,0 +1,139 @@
+.main-container {
+  margin: 0;
+  background-image: linear-gradient( 90.5deg,  rgba(112,181,176,1) 1.9%, rgba(220,244,241,1) 87.7% );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+}
+
+
+.todo-container {
+  background: #ffffff;
+  padding: 25px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 16px;
+  width: 520px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    margin:10px ;
+}
+.todo-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  width: 65%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #2575fc;
+}
+
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2575fc;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+ background-image: linear-gradient( 90.5deg,  rgb(41, 116, 111) 1.9%, rgb(175, 224, 219) 87.7% );
+ color: black;
+  transform: scale(1.05);
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+li span {
+  flex: 1;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+li button {
+  background: #ff4d4d;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 6px 10px;
+}
+
+li button:hover {
+  background: #cc0000;
+}
+
+p {
+  margin-top: 20px;
+  color: #2a2929;
+  font-size: 16px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
